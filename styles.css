@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.instyle.com/thmb/eZLDXHjl1yi_Lw2wIfFwTCpMN4Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1473319872-007b5b12c117401fadba9aa12bb4c60a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        width: 90%; /* Ajuste para pantallas más pequeñas */
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Reducir tamaño del texto en pantallas muy pequeñas */
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
